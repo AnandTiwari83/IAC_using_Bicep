@@ -44,10 +44,16 @@ In this exercise, you will
 1. On the Terminal menu, select New Terminal. The terminal window usually opens in the lower half of your screen.
 1. If the shell shown on the right side of the terminal window is powershell or pwsh, the correct shell is open, and you can skip to the next section.
 
-    ![](media/pwsh.png)
+    ![](../media/pwsh.png)
    
 1. If a shell other than powershell or pwsh appears, select the shell dropdown arrow, and then select PowerShell.
+
+    ![](../media/select-shell-powershell.png)
+   
 1. In the list of terminal shells, select powershell or pwsh.
+
+    ![](../media/select-powershell.png)
+   
 1. In the terminal, go to the directory where you saved your template. For example, if you saved your template in the templates folder, you can use this command:
 
    ```
@@ -108,12 +114,19 @@ The first time you deploy a Bicep template, you might want to use the Azure port
 
 1. Select [sandbox resource group name].
 
-2. In Overview, you can see that one deployment succeeded. You might need to expand the Essentials area to see the deployment.
+1. In Overview, you can see that one deployment succeeded. You might need to expand the Essentials area to see the deployment.
 
-3. Select 1 Succeeded to see the details of the deployment.
+    ![](../media/4-deployment-succeeded.png)
 
-4. Select the deployment called main to see which resources were deployed, then select Deployment details to expand it. In this case, there's one storage account with the name that you specified.
-5. Leave the page open in your browser. You'll check on deployments again later.
+1. Select 1 Succeeded to see the details of the deployment.
+
+    ![](../media/4-deployment.png)
+
+1. Select the deployment called main to see which resources were deployed, then select Deployment details to expand it. In this case, there's one storage account with the name that you specified.
+
+    ![](../media/4-deployment-details.png)
+   
+1. Leave the page open in your browser. You'll check on deployments again later.
 
 ### Task 5: Add an App Service plan and app to your Bicep template
 In the previous task, you learned how to create a template that contains a single resource and deploy it. Now you're ready to deploy more resources, including a dependency. In this task, you'll add an App Service plan and app to the Bicep template.
@@ -139,7 +152,8 @@ In the previous task, you learned how to create a template that contains a singl
      }
    ```
 1. Update the name of the App Service app from toy-product-launch-1 to something that's likely to be unique. Make sure the name is 2 to 60 characters with uppercase and lowercase letters, numbers, and hyphens, and doesn't start or end with a hyphen.
-2. Save the changes to the file.
+   
+1. Save the changes to the file.
 
 ### Task 6: Deploy the updated Bicep template
 
@@ -149,6 +163,9 @@ In the previous task, you learned how to create a template that contains a singl
    New-AzResourceGroupDeployment -TemplateFile main.bicep
    ```
 1. Return to the Azure portal and go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment.
-2. Select the 1 Succeeded link.
-3. Select the deployment called main, and then select Deployment details to expand the list of deployed resources.
-4. Notice that the App Service plan and app were deployed.
+1. Select the 1 Succeeded link.
+1. Select the deployment called main, and then select Deployment details to expand the list of deployed resources.
+
+    ![](../media/4-addapp-details.png)
+   
+1. Notice that the App Service plan and app were deployed.
