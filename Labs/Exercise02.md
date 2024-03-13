@@ -177,5 +177,7 @@ In this exercise, you will
 
 1. Select the deployment called main, and then select Deployment details to expand the list of deployed resources.
 
+    ![](./media/6-addparams-details.png)
+
 1. Notice that a new App Service app and storage account have been deployed with randomly generated names.
 
