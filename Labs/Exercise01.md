@@ -44,7 +44,7 @@ In this exercise, you will
 1. On the Terminal menu, select New Terminal. The terminal window usually opens in the lower half of your screen.
 1. If the shell shown on the right side of the terminal window is powershell or pwsh, the correct shell is open, and you can skip to the next section.
 
-    ![](./media/pwsh.png)
+    ![](media/pwsh.png)
    
 1. If a shell other than powershell or pwsh appears, select the shell dropdown arrow, and then select PowerShell.
 1. In the list of terminal shells, select powershell or pwsh.
