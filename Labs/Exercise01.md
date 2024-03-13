@@ -10,7 +10,7 @@
 
 In this exercise, you will 
 
-### Task 1: Open the Azure portal
+### Task 1: Open Visual Studio Code
 
 1. Open Visual Studio Code.
 
