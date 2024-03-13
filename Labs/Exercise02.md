@@ -10,7 +10,7 @@
 
 In this exercise, you will
 
-#### Task 1: Add the location and resource name parameters
+### Task 1: Add the location and resource name parameters
 
 1. In the main.bicep file in Visual Studio Code, add the following code to the top of the file:
 
@@ -111,7 +111,7 @@ In this exercise, you will
 
 1. Save the changes to the file.
 
-### Verify your Bicep file
+#### Task 2.1: Verify your Bicep file
 
 1. After you've completed all of the preceding changes, your main.bicep file should look like this example:
 
@@ -161,7 +161,7 @@ In this exercise, you will
     ```
     > Note: If your file doesn't match, copy the example or adjust your file to match the example.
 
-### Deploy the updated Bicep template
+#### Task 2.2: Deploy the updated Bicep template
 
 1. Run the following Azure PowerShell command in the terminal.
 
@@ -169,7 +169,7 @@ In this exercise, you will
     New-AzResourceGroupDeployment -TemplateFile main.bicep -environmentType nonprod
     ```
 
-### Check your deployment
+### Task 3: Check your deployment
 
 1. In your browser, go back to the Azure portal and go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment.
 
